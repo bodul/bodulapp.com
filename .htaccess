@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+rewritecond %{http_host} ^bodulapp.com [nc]
+rewriterule ^(.*)$ http://www.bodulapp.com/$1 [r=301,nc]
